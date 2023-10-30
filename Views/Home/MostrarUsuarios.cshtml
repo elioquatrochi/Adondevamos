@@ -1,0 +1,15 @@
+﻿
+
+@model  List<Adondevamos.Models.Actividades>
+
+<h2>Lista de Elementos</h2>
+
+<div class="cuadro-container">
+    @foreach (Adondevamos.Models.Actividades item in Model)
+    {
+        <div class="cuadro">
+            <h3>@item</h3>
+            
+        </div>
+    }
+</div>

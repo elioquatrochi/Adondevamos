@@ -1,0 +1,80 @@
+body {
+    padding: 10px;
+    position: fixed;
+    top: 110px;
+    right: 450px;
+}
+
+.formulario-agregar-persona {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.label-Nombre,
+.label-Telefono,
+.label-Correo {
+    display: block;
+    font-weight: bold;
+}
+
+.input-Nombre,
+.input-Telefono,
+.input-Correo {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    right: 450px;
+
+}
+
+.btn-agregar {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 auto;
+    right: 450px;
+}
+
+    .btn-agregar:hover {
+        background-color: #0056b3;
+    }
+
+.volver {
+    text-align: center;
+    left: 0;
+}
+
+dt {
+    border: 1px solid black;
+    padding: 8px;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+dd {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0 auto;
+}
+
+dd {
+    background-color: #f2f2f2;
+}
+
+dd:nth-child(even) {
+    background-color: #dddddd;
+}

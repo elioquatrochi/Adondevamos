@@ -1,0 +1,55 @@
+﻿
+@{
+    Layout = null;
+}
+
+<header>
+    <h1>Encabezado</h1>
+</header>
+
+<body>
+
+    <link href="~/Content/sala.css" rel="stylesheet" />
+    <script src="~/Scripts/agregar.js"></script>
+</body>
+
+
+@model List<Adondevamos.Models.Perfil>
+
+<h2>Usuarios en la sala</h2>
+
+<ul>
+    @foreach (var usuario in Model)
+    {
+        <li>@usuario.Nombre</li>
+    }
+</ul>
+
+
+<div class="sala-externa">
+    <div class="sala-interna">
+        <div class="persona">Persona 1</div>
+        <div class="persona">Persona 2</div>
+        <div class="persona">Persona 3</div>
+
+
+
+        <div id="formularioUsuario" style="display: none">
+            @Html.Partial("Perfil")
+        </div>
+        @*@model Adondevamos.Models.Perfil*@
+
+        @using (Html.BeginForm("Perfil", "Home", FormMethod.Post, new { id = "Perfil" }))
+        {
+
+            <!-- Otros campos del usuario -->
+            <button id="agregarUsuario">+</button>
+        }
+
+
+
+
+    </div>
+</div>
+
+

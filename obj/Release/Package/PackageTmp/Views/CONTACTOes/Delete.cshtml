@@ -1,0 +1,78 @@
+﻿@model Adondevamos.CONTACTO
+
+@{
+    Layout = null;
+}
+<body>
+    <link href="~/Content/Site.css" rel="stylesheet" />
+
+</body>
+<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="#page-top">¿A DONDE VAMOS?</a>
+        <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+            </ul>
+        </div>
+    </div>
+
+
+
+
+</nav>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="~/Content/Borrar.css" rel="stylesheet" />
+
+    <title>Borrar</title>
+</head>
+<body>
+    <h3>¿Estas seguro que quieres borrar?</h3>
+    <div>
+        <h4>CONTACTO</h4>
+        <hr />
+        <dl class="formulario-agregar-persona">
+            <dt>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Nombre)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Telefono)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Telefono)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Correo)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Correo)
+            </dd>
+
+        </dl>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" class="btn btn-agregar" /> |
+                @Html.ActionLink("Volver a la lista", "Index")
+            </div>
+        }
+    </div>
+</body>
+</html>

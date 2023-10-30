@@ -1,0 +1,62 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f0f0f0;
+	text-align: center;
+	padding: 150px;
+}
+
+
+
+form {
+	background-color: #fff;
+	max-width: 400px;
+	margin: 5px auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+	color: #3498db;
+}
+
+label {
+	display: block;
+	margin-bottom: 8px;
+}
+
+.campo-texto, .caja-texto {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+.caja-texto {
+	height: 100px;
+}
+
+.boton-enviar {
+	background-color: #3498db;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+	.boton-enviar:hover {
+		background-color: #2676b2;
+	}
+.campo-texto, .caja-texto, .combo-box, .calendario, .horario {
+	padding: 10px;
+	margin: 5px 0;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+	width: 100%;
+}

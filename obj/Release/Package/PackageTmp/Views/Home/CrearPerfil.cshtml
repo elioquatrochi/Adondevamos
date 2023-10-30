@@ -1,0 +1,23 @@
+﻿
+@{
+    Layout = null;
+}
+
+@model Adondevamos.Models.Perfil
+
+@using (Html.BeginForm("CrearPerfil", "Home", FormMethod.Post))
+{
+    <div>
+        <label>Nombre:</label>
+        @Html.TextBoxFor(m => m.Nombre)
+    </div>
+    <div>
+        <label>Apellido:</label>
+        @Html.TextBoxFor(m => m.Apellido)
+    </div>
+    <div>
+        <label>Correo electrónico:</label>
+        @Html.TextBoxFor(m => m.CorreoElectronico)
+    </div>
+    <input type="submit" value="Guardar perfil" />
+}

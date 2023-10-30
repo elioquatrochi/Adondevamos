@@ -1,0 +1,30 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+@model Adondevamos.Models.Perfil
+
+<h2>Editar Perfil</h2>
+
+@using (Html.BeginForm("Update", "User", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div>
+        @Html.LabelFor(model => model.Nombre)
+        @Html.TextBoxFor(model => model.Nombre)
+    </div>
+    <div>
+        @Html.LabelFor(model => model.Email)
+        @Html.TextBoxFor(model => model.Email)
+    </div>
+    <div>
+        @Html.LabelFor(model => model.FotoPerfil)
+        <input type="file" name="FotoPerfil" accept="image/*">
+    </div>
+    <div>
+        <input type="submit" value="Guardar cambios">
+    </div>
+}
+

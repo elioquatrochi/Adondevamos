@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+
+}
+
+.box {
+    cursor: pointer;
+    margin: 180px;
+}
+p {
+    line-height: 100px; /* Asegura que el texto esté verticalmente centrado */
+    text-align: center;
+    height: 100px;
+    font-size: 35px;
+}
+img {
+    max-width: 300%;
+    max-height: 200%;
+    border: 5px solid #3498db;
+    border-radius: 30px;
+}
+.img2 {
+    max-width: 500%;
+    max-height: 200px;
+    border: 5px solid #3498db;
+    border-radius: 30px;
+    box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.2);
+}
+.clickable-box {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: #fff; /* Cambia el color del texto del enlace */
+}

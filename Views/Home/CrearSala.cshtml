@@ -1,0 +1,114 @@
+﻿
+@{
+    Layout = null;
+}
+
+<body>
+    <link href="~/Content/Site.css" rel="stylesheet" />
+
+</body>
+<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="#page-top">¿A DONDE VAMOS?</a>
+        <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+            </ul>
+        </div>
+    </div>
+
+
+
+
+</nav>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Campos de Texto</title>
+    <link href="~/Content/CrearSala.css" rel="stylesheet" />
+</head>
+
+
+<body>
+
+
+   
+
+
+    <form action="procesar.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" class="campo-texto" placeholder="Ingresa tu nombre" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" class="campo-texto" placeholder="Ingresa tu correo electrónico" required>
+
+        @*<label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" class="caja-texto" placeholder="Escribe tu mensaje aquí" required></textarea>*@
+
+        <select id="deporte" name="deporte" class="combo-box">
+            <option value="seleccionar">Seleccionar</option>
+            <option value="futbol">Fútbol</option>
+            <option value="baloncesto">Baloncesto</option>
+            <option value="tenis">Tenis</option>
+        </select>
+
+        <label for="opcion">Opción:</label>
+        <select id="opcion" name="opcion" class="combo-box">
+            <option value="seleccionar">Selecciona un deporte primero</option>
+        </select>
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" class="calendario" required>
+
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora" class="horario" required>
+
+        <input type="submit" value="Enviar" class="boton-enviar">
+
+
+    </form>
+
+</body>
+</html>
+
+@*@model Adondevamos.Models.Actividades*@
+
+
+
+@*@using (Html.BeginForm("AgregarUsuario", "Usuario", FormMethod.Post))
+    {
+        @Html.LabelFor(m => m.Nombre)
+        @Html.TextBoxFor(m => m.Nombre)
+
+        @Html.LabelFor(m => m.Apellido)
+        @Html.TextBoxFor(m => m.Apellido)
+
+        @Html.LabelFor(m => m.CorreoElectronico)
+        @Html.TextBoxFor(m => m.CorreoElectronico)
+
+        <input type="submit" value="Agregar usuario" />
+    }*@
+
+@*@using (Html.BeginForm("CrearSala", "Home", FormMethod.Post))
+    {
+
+
+
+    }*@
+
+
+
+@using (Html.BeginForm("Create", "CONTACTOes", FormMethod.Post))
+{
+    @*@model Adondevamos.Models.Perfil*@
+
+
+
+
+}
+
+

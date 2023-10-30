@@ -1,0 +1,82 @@
+﻿@model IEnumerable<Adondevamos.CONTACTO>
+
+@{
+    Layout = null;
+}
+<html>
+
+
+<body>
+    <link href="~/Content/Site.css" rel="stylesheet" />
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="~/Content/listar.css" rel="stylesheet" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("CREAR", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telefono)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Correo)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Telefono)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Correo)
+                </td>
+                <td>
+                    @Html.ActionLink("Editar", "Edit", new { id = item.IdContacto }) |
+                    @Html.ActionLink("Detalles", "Details", new { id = item.IdContacto }) |
+                    @Html.ActionLink("Borrar", "Delete", new { id = item.IdContacto })
+                </td>
+            </tr>
+        }
+
+    </table>
+</body>
+</html>
+<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="#page-top">¿A DONDE VAMOS?</a>
+        <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+            </ul>
+        </div>
+    </div>
+
+
+
+
+</nav>
+

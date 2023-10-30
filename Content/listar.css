@@ -1,0 +1,29 @@
+p {
+    padding: 10px;
+    position: fixed;
+    top: 110px;
+    left: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 10px;
+    position: fixed;
+    top: 150px;
+    left: 0;
+    
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
